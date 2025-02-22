@@ -24,6 +24,37 @@ h1 {
     color: #fff;
 }
 
+h1 {
+    background: linear-gradient(
+    to right,
+    #FFB6C1, /* Rose clair */
+    #FF69B4, /* Rose vif */
+    #FFA07A, /* Saumon */
+    #FFD700, /* Or clair */
+    #98FB98, /* Vert pâle */
+    #20B2AA, /* Turquoise */
+    #87CEEB, /* Bleu ciel */
+    #6495ED, /* Bleu pastel */
+    #DDA0DD, /* Prune clair */
+    #EE82EE, /* Violet clair */
+    #FFB6C1  /* Rose clair */
+);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow 40s linear infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 400% 50%;
+    }
+}
+
 .games-container {
     display: flex;
     justify-content: center;
