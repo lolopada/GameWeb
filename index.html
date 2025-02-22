@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Web</title>
-    <link rel="icon" href="assetsIndex/ico.svg" type="image/x-icon">
-    
-    <link rel="stylesheet" href="assetsIndex/styles.css">
-    
+    <link rel="icon" href="assets/ico.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/styles.css">
+
 </head>
+
 <body>
     <div class="container">
         <h1>Game Web</h1>
@@ -16,24 +18,39 @@
             <div class="game-card">
                 <h2>Blocus</h2>
                 <p>Jeu de stratégie contre l'ia. Bloquez votre adversaire pour gagner !</p>
-                <a href="blocusJS/GameBlocus.html" class="play-button">Jouer</a>
+
+                <div class="container-btn-card">
+                    <button class="rules-button"><img src="assets/book.svg" alt="regle"></button>
+                    <a href="blocusJS/GameBlocus.html" class="play-button">Jouer</a>
+                </div>
             </div>
             <div class="game-card">
                 <h2>Démineur</h2>
                 <p>Jeu classique du démineur. Trouvez toutes les cases sans mines !</p>
-                <a href="demineurJS/Demineur.html" class="play-button">Jouer</a>
+                <div class="container-btn-card">
+                    <button class="rules-button"><img src="assets/book.svg" alt="regle"></button>
+                    <a href="demineurJS/Demineur.html" class="play-button">Jouer</a>
+                </div>
             </div>
             <div class="game-card">
                 <h2>Memory</h2>
                 <p>Testez votre mémoire en trouvant toutes les paires de cartes !</p>
-                <a href="memoryJS/GameMemory.html" class="play-button">Jouer</a>
+                <div class="container-btn-card">
+                    <button class="rules-button"><img src="assets/book.svg" alt="regle"></button>
+                    <a href="memoryJS/GameMemory.html" class="play-button">Jouer</a>
+                </div>
             </div>
             <div class="game-card">
                 <h2>2048</h2>
                 <p>Combinez les tuiles pour atteindre le nombre 2048 !</p>
-                <a href="2048JS/Game2048.html" class="play-button">Jouer</a>
+                <div class="container-btn-card">
+                    <button class="rules-button"><img src="assets/book.svg" alt="regle"></button>
+                    <a href="2048JS/Game2048.html" class="play-button">Jouer</a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="assets/script.js"></script>
 </body>
+
 </html>
