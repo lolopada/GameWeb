@@ -1,0 +1,174 @@
+.cell-0 {
+    background-color: white;
+}
+
+.cell-2 {
+    background-color: #eee4da;
+}
+
+.cell-4 {
+    background-color: #ede0c8;
+}
+
+.cell-8 {
+    background-color: #f2b179;
+}
+
+.cell-16 {
+    background-color: #f59563;
+}
+
+.cell-32 {
+    background-color: #f67c5f;
+}
+
+.cell-64 {
+    background-color: #f65e3b;
+}
+
+.cell-128 {
+    background-color: #edcf72;
+}
+
+.cell-256 {
+    background-color: #edcc61;
+}
+
+.cell-512 {
+    background-color: #edc850;
+}
+
+.cell-1024 {
+    background-color: #edc53f;
+}
+
+.cell-2048 {
+    background-color: #edc22e;
+}
+
+.cell-4096 {
+    background-color: #eee4da;
+}
+
+.cell-8192 {
+    background-color: #ede0c8;
+}
+
+.cell-16384 {
+    background-color: #f2b179;
+}
+
+.cell-32768 {
+    background-color: #f59563;
+}
+
+.cell-65536 {
+    background-color: #f67c5f;
+}
+
+.cell-131072 {
+    background-color: #f65e3b;
+}
+
+.cell-2::before {
+    content: "2";
+    color: #272727;
+}
+
+.cell-4::before {
+    content: "4";
+    color: #272727;
+}
+
+.cell-8::before {
+    content: "8";
+    color: #272727;
+}
+
+.cell-16::before {
+    content: "16";
+    color: #272727;
+}
+
+.cell-32::before {
+    content: "32";
+    color: #272727;
+}
+
+.cell-64::before {
+    content: "64";
+    color: #272727;
+}
+
+.cell-128::before {
+    content: "128";
+    color: #272727;
+}
+
+.cell-256::before {
+    content: "256";
+    color: #272727;
+}
+
+.cell-512::before {
+    content: "512";
+    color: #272727;
+}
+
+.cell-1024::before {
+    content: "1024";
+    color: #272727;
+}
+
+.cell-2048::before {
+    content: "2048";
+    color: #272727;
+}
+
+.cell-4096::before {
+    content: "4096";
+    color: #272727;
+}
+
+.cell-8192::before {
+    content: "8192";
+    color: #272727;
+}
+
+.cell-16384::before {
+    content: "16384";
+    color: #272727;
+}
+
+.cell-32768::before {
+    content: "32768";
+    color: #272727;
+}
+
+.cell-65536::before {
+    content: "65536";
+    color: #272727;
+}
+
+.cell-131072::before {
+    content: "131072";
+    color: #272727;
+}
+
+.cell {
+    position: relative;
+}
+
+.cell::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 140%; 
+}
+
+@media screen and (max-width: 450px) {
+    .cell::before {
+        font-size: 80%; 
+    }
+}

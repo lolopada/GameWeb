@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithme 2048</title>
+    <link rel="icon" href="../assets/ico.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/styles.css">
+    
+    
+</head>
+
+<body>
+    <a href="../index.html" class="back-btn">
+        <span class="back-text">Retour</span>
+    </a>
+    <div class="container-card">
+        <h1>2048 - Algorithmes</h1>
+        <div class="games-container">
+            <div class="game-card">
+                <h2>Algorithme glouton 1</h2>
+                <p>Cet algorithme analyse la grille pour compter les fusions possibles horizontalement et verticalement.
+                    Il effectue ensuite des déplacements en priorisant la direction avec le plus de fusions possibles,
+                    jusqu'à la fin du jeu.</p>
+                    <a href="algo1/2048Algo1.html" class="play-button">Voir</a>
+            </div>
+            <div class="game-card">
+                <h2>Algorithme glouton 2</h2>
+                <p>Cet algorithme cherche la meilleure fusion possible sur la grille et effectue un mouvement en
+                    alternant entre gauche/droite ou haut/bas pour optimiser les combinaisons. </p>
+                    <a href="algo2/2048Algo2.html" class="play-button">Voir</a>
+            </div>
+            <div class="game-card">
+                <h2>Algorithme avancé</h2>
+                <p>L'algorithme utilise Expectimax, une variante de Minimax, pour simuler les coups possibles et choisir
+                    le meilleur mouvement en fonction d'une fonction d'évaluation qui privilégie les tuiles bien placées
+                    et les cases vides.</p>
+                    <a href="algo3/2048Algo3.html" class="play-button">Voir</a>
+            </div>
+        </div>
+</body>
+
+</html>

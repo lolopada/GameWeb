@@ -3,6 +3,9 @@
     --color-secondary: #027495;
     --color-white: #ffffff;
 }
+* {
+    -webkit-tap-highlight-color: transparent;
+  }
 
 body {
     font-family: Arial, sans-serif;
@@ -210,6 +213,12 @@ h1 {
     #game-board::-webkit-scrollbar {
         width: 14px; 
         height: 14px;
+    }
+    .back-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        top: 10px;
+        left: 10px;
     }
 }
 

@@ -1,3 +1,8 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -286,5 +291,11 @@ h1 {
     .container {
         margin-top: 60px;
         padding: 0 10px;
+    }
+    .back-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        top: 10px;
+        left: 10px;
     }
 }
