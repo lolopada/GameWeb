@@ -41,6 +41,10 @@ h1 {
     padding: 2rem;
 }
 
+h3 {
+    text-align: center;
+}
+
 .games-container {
     display: flex;
     justify-content: center;
