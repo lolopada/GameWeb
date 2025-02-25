@@ -7,11 +7,16 @@ class Game {
     }
 
     init() {
+        // Mettre à jour la variable CSS pour la taille de la grille
+        this.gameBoard.style.setProperty('--grid-size', this.board.cols);
+        
         // Définir la grille en fonction du nombre de colonnes
-        this.gameBoard.style.gridTemplateColumns = `repeat(${this.board.cols}, 35px)`;
+        this.gameBoard.style.gridTemplateColumns = `repeat(${this.board.cols}, 1fr)`;
+        
         this.renderBoard();
+        
         document.getElementById('restart-button').addEventListener('click', (e) => {
-            e.preventDefault(); // Empêcher le comportement par défaut
+            e.preventDefault();
             this.restart();
         });
     }
@@ -125,8 +130,8 @@ function showGameSetupPopup() {
         <div class="popup-content">
             <h2>Configuration du jeu</h2>
             <div class="form-group">
-                <label for="gridSize">Taille de la grille (5-20) :</label>
-                <input type="number" id="gridSize" min="5" max="20" value="10">
+                <label for="gridSize">Taille de la grille (5-15) :</label>
+                <input type="number" id="gridSize" min="5" max="15" value="10">
             </div>
             <div class="form-group">
                 <label for="bombCount">Nombre de bombes :</label>
@@ -154,7 +159,7 @@ function showGameSetupPopup() {
         
         // Forcer les limites
         if (size < 5) size = 5;
-        if (size > 20) size = 20;
+        if (size > 15) size = 15;
         gridSizeInput.value = size;
 
         // Mettre à jour le nombre de bombes
@@ -170,8 +175,8 @@ function showGameSetupPopup() {
         const bombs = parseInt(bombCountInput.value);
 
         // Validation finale avant de démarrer
-        if (size < 5 || size > 20) {
-            alert('La taille de la grille doit être entre 5 et 20 !');
+        if (size < 5 || size > 15) {
+            alert('La taille de la grille doit être entre 5 et 15 !');
             return;
         }
         

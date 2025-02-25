@@ -53,7 +53,7 @@ h1 {
     border-radius: 8px;
     width: fit-content;
     margin: 0;
-    max-height: 1000px;
+    max-height: 1200px;
     max-width: calc(90vw - 2px); 
     overflow-x: auto; 
     scrollbar-width: normal;
@@ -197,15 +197,18 @@ h1 {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .container {
         transform: translate(-50%, -40%) scale(0.9);
         padding: 1rem;
     }
 
+    #game-board {
+        gap:4px;
+    }
     .cell {
-        width: 30px;
-        height: 30px;
+        width: 22px;
+        height: 22px;
         font-size: 0.9em;
     }
 
